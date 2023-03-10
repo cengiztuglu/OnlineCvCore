@@ -8,6 +8,8 @@
   @await Html.PartialAsync("HeaderPartial")
   <body id="top">
     @await Html.PartialAsync("NavbarPartial")
+    <br />
+    @await Component.InvokeAsync("FeatureList")
     <div class="page-content">
       <div id="content">
 <header>
@@ -19,6 +21,7 @@
           <div class="mt-5">
             <p class="lead text-uppercase mb-1">Hello!</p>
             <h1 class="intro-title marker" data-aos="fade-left" data-aos-delay="50">I’m Walter Patterson</h1>
+
             <p class="lead fw-normal mt-3" data-aos="fade-up" data-aos-delay="100">Web Developer & Mobile Application Developer</p>
             <div class="social-nav" data-aos="fade-up" data-aos-delay="200">
               <nav role="navigation">
